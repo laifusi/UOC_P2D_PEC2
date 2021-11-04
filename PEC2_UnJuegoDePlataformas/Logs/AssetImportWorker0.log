@@ -1,0 +1,1038 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1288; Version 2009; 64bit' Language: 'ca' Physical Memory: 16149 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/laiaf/OneDrive/Documents/UOC/Programacio2D/PEC2/PEC2_UnJuegoDePlataformas
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58129
+Successfully changed project path to: C:/Users/laiaf/OneDrive/Documents/UOC/Programacio2D/PEC2/PEC2_UnJuegoDePlataformas
+C:/Users/laiaf/OneDrive/Documents/UOC/Programacio2D/PEC2/PEC2_UnJuegoDePlataformas
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 44.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/laiaf/OneDrive/Documents/UOC/Programacio2D/PEC2/PEC2_UnJuegoDePlataformas/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
+    Vendor:   
+    VRAM:     1979 MB
+    Driver:   27.21.14.6280
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004404 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 50.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.872 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1872ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (439ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (146ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (182ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (86ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006109 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 50.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.089 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1090ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (881ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (369ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 93.8 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2529.
+Total: 2.762800 ms (FindLiveObjects: 0.183100 ms CreateObjectMapping: 0.051300 ms MarkObjects: 2.450900 ms  DeleteObjects: 0.076100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack
+  artifactKey: Guid(f0c9298504bfd214f855f1786c30b345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack using Guid(f0c9298504bfd214f855f1786c30b345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24f6d22c0db29808fb9e0c9c792238cf') in 0.011640 seconds 
+  Import took 0.014272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/preview.png
+  artifactKey: Guid(da9564d33a3197f4cac03cee8e432853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/preview.png using Guid(da9564d33a3197f4cac03cee8e432853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cee3e78a5be5343a35b34dbfba1ce20') in 0.122671 seconds 
+  Import took 0.125379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/preview.png
+  artifactKey: Guid(7929b8573a17b9e41a77fdc8107ae931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/preview.png using Guid(7929b8573a17b9e41a77fdc8107ae931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d9a3c063e8227963dfe00c1526a0e6') in 0.025982 seconds 
+  Import took 0.028603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/sheet.png
+  artifactKey: Guid(02cbfed55bc197141915ac0b1e851da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/sheet.png using Guid(02cbfed55bc197141915ac0b1e851da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1fa7110f9a505ce36e794c87bb80f0') in 0.028155 seconds 
+  Import took 0.030905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/sample.png
+  artifactKey: Guid(1c9902526dd7b3046a09ced86ef8fc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/sample.png using Guid(1c9902526dd7b3046a09ced86ef8fc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e89b9412fb92900163a0a51656bfcb4') in 0.029351 seconds 
+  Import took 0.032211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0
+  artifactKey: Guid(590289cbb1b170f44933ec55ec4e3c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0 using Guid(590289cbb1b170f44933ec55ec4e3c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb8faa65c597b0f3e578bb150d10134') in 0.006697 seconds 
+  Import took 0.009403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/sample.png
+  artifactKey: Guid(bef33463a5144994d83aa340ab18710f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/sample.png using Guid(bef33463a5144994d83aa340ab18710f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fcf714b2c721d1d7c7fdf2941928708') in 0.038249 seconds 
+  Import took 0.041191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(609ed6ba1d5ee15478c69582dba13b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(609ed6ba1d5ee15478c69582dba13b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b7cdc76d531d572468afb1a6c03f3d') in 0.007277 seconds 
+  Import took 0.011889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.090286 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles
+  artifactKey: Guid(7fd08cc89aefbd5418e247cb275ef888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles using Guid(7fd08cc89aefbd5418e247cb275ef888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c6688690b639eaa57860795e903844') in 0.009494 seconds 
+  Import took 0.012502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003100 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles
+  artifactKey: Guid(7fd08cc89aefbd5418e247cb275ef888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles using Guid(7fd08cc89aefbd5418e247cb275ef888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c6688690b639eaa57860795e903844') in 0.002862 seconds 
+  Import took 0.007254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045575 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beam.png
+  artifactKey: Guid(12da739dfc3d8cc4fb13864a75657a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beam.png using Guid(12da739dfc3d8cc4fb13864a75657a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2190baa6671fd660d5e3f4c7d2e4ce22') in 0.023961 seconds 
+  Import took 0.028009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchGreenOff.png
+  artifactKey: Guid(a4b5fdb897773bb46a6692eb754abbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchGreenOff.png using Guid(a4b5fdb897773bb46a6692eb754abbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f621b1f597314345955f2a8d6104d813') in 0.024146 seconds 
+  Import took 0.027724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueHorizontal.png
+  artifactKey: Guid(4dc894c7c42eab04a841fb78e11f8899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueHorizontal.png using Guid(4dc894c7c42eab04a841fb78e11f8899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b3cb8c39b9e5a2fcbf7e5a07aa2091d') in 0.024214 seconds 
+  Import took 0.027408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserLeftShoot.png
+  artifactKey: Guid(c36c30e49bdeefa4298e32a831b95c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserLeftShoot.png using Guid(c36c30e49bdeefa4298e32a831b95c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214aa35d13cb9304263924cadd7c88f5') in 0.022485 seconds 
+  Import took 0.025349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveSpikeTop.png
+  artifactKey: Guid(619862ca280e4554e8e4a5dd3b54f4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveSpikeTop.png using Guid(619862ca280e4554e8e4a5dd3b54f4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b6fdfe9e5a4ceacecc326452162512') in 0.016174 seconds 
+  Import took 0.019242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueVertical.png
+  artifactKey: Guid(d3322ce19412ff6469cd59ef46c1e504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueVertical.png using Guid(d3322ce19412ff6469cd59ef46c1e504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bfecaecd0160d2dd182594b57e8f4f') in 0.016327 seconds 
+  Import took 0.020022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRightShoot.png
+  artifactKey: Guid(f4338de71add7b0449153d81c645b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRightShoot.png using Guid(f4338de71add7b0449153d81c645b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a8818a6168de7b6dd89dd901f43f9e') in 0.015627 seconds 
+  Import took 0.018655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserPurple.png
+  artifactKey: Guid(2bf5df5eb3f192944b9e7475ae987066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserPurple.png using Guid(2bf5df5eb3f192944b9e7475ae987066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0815835280bb7e7deb36e876cb6bbac8') in 0.015008 seconds 
+  Import took 0.018082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveTop.png
+  artifactKey: Guid(cc6de310b06b825408cbfea5621d2578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveTop.png using Guid(cc6de310b06b825408cbfea5621d2578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a199ae6c36c04fd01263c98fc6e044d') in 0.014064 seconds 
+  Import took 0.017528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserUp.png
+  artifactKey: Guid(046431be78a1315439f5ca94f8d2be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserUp.png using Guid(046431be78a1315439f5ca94f8d2be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98133fe903af30bf12ed64b36747e623') in 0.016001 seconds 
+  Import took 0.019108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserUpShoot.png
+  artifactKey: Guid(254926429e6a785488b21d3750c1f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserUpShoot.png using Guid(254926429e6a785488b21d3750c1f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5685dd72ec13f9b685d3bc3e4bb21a1') in 0.014323 seconds 
+  Import took 0.017996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowVertical.png
+  artifactKey: Guid(95fec83819dfbcf4e82e9491bfa26537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowVertical.png using Guid(95fec83819dfbcf4e82e9491bfa26537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46803cdcbdf035f7781eec807226ff8a') in 0.016551 seconds 
+  Import took 0.020344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffLeftAlt.png
+  artifactKey: Guid(c8d33d47ec435b84a9e57fcbb869aa9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffLeftAlt.png using Guid(c8d33d47ec435b84a9e57fcbb869aa9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81d62c3550a8f10c2b2b6e142f180ad') in 0.014376 seconds 
+  Import took 0.017155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedVertical.png
+  artifactKey: Guid(3913209cb0f9533459ba002124fa38be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedVertical.png using Guid(3913209cb0f9533459ba002124fa38be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4194f91c478a4b2ae5a292a71cda5390') in 0.014160 seconds 
+  Import took 0.017207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchBlueOn.png
+  artifactKey: Guid(a6a8188e99ac6cc41b91f01f812524a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchBlueOn.png using Guid(a6a8188e99ac6cc41b91f01f812524a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8a53f4c3a4d1361f675357e6aa0745') in 0.015162 seconds 
+  Import took 0.017956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBoltsNarrow.png
+  artifactKey: Guid(61a2f6a08de72fa43aa3c513a2e563ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBoltsNarrow.png using Guid(61a2f6a08de72fa43aa3c513a2e563ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e985d276765ce85fb54556b71d3c05e7') in 0.016285 seconds 
+  Import took 0.020136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedBurst.png
+  artifactKey: Guid(89bcffdcb84b8c241962605a1c75455f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedBurst.png using Guid(89bcffdcb84b8c241962605a1c75455f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde7de4ddfac992364d3c9a213456bd7') in 0.014906 seconds 
+  Import took 0.018512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowHorizontal.png
+  artifactKey: Guid(b6f1dae9c04880f419b925775b8a2787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowHorizontal.png using Guid(b6f1dae9c04880f419b925775b8a2787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70d452c855141a484ed6d8b8dbab535') in 0.015326 seconds 
+  Import took 0.018465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveSpikeBottom.png
+  artifactKey: Guid(4aff0ab19d6714345a4adbdf1428d21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveSpikeBottom.png using Guid(4aff0ab19d6714345a4adbdf1428d21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0381393f6b38fa72c40682d2c7432bff') in 0.014673 seconds 
+  Import took 0.017671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamDiagonalRight.png
+  artifactKey: Guid(4e090735d23781a48a2bfc14e04bb39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamDiagonalRight.png using Guid(4e090735d23781a48a2bfc14e04bb39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcab5a09d3f02ca484f840bebcfabbc') in 0.017096 seconds 
+  Import took 0.020331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserDown.png
+  artifactKey: Guid(14a11468f9fe7dc4681b12c9d609c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserDown.png using Guid(14a11468f9fe7dc4681b12c9d609c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff4e6d5a7e709f88d7ef13a26170197') in 0.015428 seconds 
+  Import took 0.018362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamDiagonalLeft.png
+  artifactKey: Guid(aaeaa164b8f8111468b787745d07b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamDiagonalLeft.png using Guid(aaeaa164b8f8111468b787745d07b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bceacd3528ae69d62126f84c58afa3') in 0.016009 seconds 
+  Import took 0.018969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchBlueOff.png
+  artifactKey: Guid(fe5a4da961ff8f549bb344f356edcae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchBlueOff.png using Guid(fe5a4da961ff8f549bb344f356edcae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38caac1bd41410c61d7f57be2452f872') in 0.014944 seconds 
+  Import took 0.017891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserLeft.png
+  artifactKey: Guid(e84100e35963bae4285bda9a00c26216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserLeft.png using Guid(e84100e35963bae4285bda9a00c26216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54956eed5310dbb8f321f04d8193a46') in 0.015982 seconds 
+  Import took 0.019555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchRedOff.png
+  artifactKey: Guid(1f4923cf733b9624eb3f1874dc1314cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchRedOff.png using Guid(1f4923cf733b9624eb3f1874dc1314cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6102d45a709d9398a9a5d24064e12596') in 0.014932 seconds 
+  Import took 0.018014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenVertical.png
+  artifactKey: Guid(a42e16743b41d0c448657c783a3f7dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenVertical.png using Guid(a42e16743b41d0c448657c783a3f7dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a9175be2eada945210894c2ddc2c58') in 0.017394 seconds 
+  Import took 0.020289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffLeft.png
+  artifactKey: Guid(2cbe1c87c38ab0343a3e5e86f7184c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffLeft.png using Guid(2cbe1c87c38ab0343a3e5e86f7184c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b767fb0e6f98563e12c1cdc1c3eff44a') in 0.016310 seconds 
+  Import took 0.019926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchRedOn.png
+  artifactKey: Guid(8ca341db239e8ec4a84a7792ba27d867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchRedOn.png using Guid(8ca341db239e8ec4a84a7792ba27d867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb96dc1152024d709ab945466894e3f1') in 0.015040 seconds 
+  Import took 0.019001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueBurst.png
+  artifactKey: Guid(b7c3bc8bf8556e943ab274f3709f612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserBlueBurst.png using Guid(b7c3bc8bf8556e943ab274f3709f612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c73fc0c514cffceee587be5515d8da') in 0.014802 seconds 
+  Import took 0.018616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffRightAlt.png
+  artifactKey: Guid(d8fac6f9087f7c7448d2b9a6cff204c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffRightAlt.png using Guid(d8fac6f9087f7c7448d2b9a6cff204c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8ca65d3b95a4e37545ecce547dfddf') in 0.015006 seconds 
+  Import took 0.018093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalFence.png
+  artifactKey: Guid(6b4f2218a3a33874c940a7dbec1a1c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalFence.png using Guid(6b4f2218a3a33874c940a7dbec1a1c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3017b15836706976efae3731ad05be44') in 0.017114 seconds 
+  Import took 0.019977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenter.png
+  artifactKey: Guid(4f2b4a8f7be71eb45aaf1919cfb08cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenter.png using Guid(4f2b4a8f7be71eb45aaf1919cfb08cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6842aa2dda94b8c36be41be59960a22d') in 0.015991 seconds 
+  Import took 0.019057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenBurst.png
+  artifactKey: Guid(984b732bd9c7fe54b8af936b060368db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenBurst.png using Guid(984b732bd9c7fe54b8af936b060368db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e94ed4a1b3efd24f1501d469392d19') in 0.015086 seconds 
+  Import took 0.017919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveRockLarge.png
+  artifactKey: Guid(bd0388c41b6190341953eedc13e377f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveRockLarge.png using Guid(bd0388c41b6190341953eedc13e377f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0be4d6ea594ae563e5dd0e8c1cd645') in 0.015224 seconds 
+  Import took 0.018118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfLeft.png
+  artifactKey: Guid(726f2c3009ff70346ad1306549cc91e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfLeft.png using Guid(726f2c3009ff70346ad1306549cc91e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff66ac2f9ea355f9471ec12ce73af8a0') in 0.014201 seconds 
+  Import took 0.017007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalMid.png
+  artifactKey: Guid(790182dba9a91ae4aa28bc72b4cabfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalMid.png using Guid(790182dba9a91ae4aa28bc72b4cabfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40790a2c3bcc445594633f79cfb63ce') in 0.016068 seconds 
+  Import took 0.018988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalRounded.png
+  artifactKey: Guid(493d594da713b91419533500eec0e681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalRounded.png using Guid(493d594da713b91419533500eec0e681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b8f83543e4457f432142b4e7e7d43d') in 0.017891 seconds 
+  Import took 0.021478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBR.png
+  artifactKey: Guid(00e832919ccafef49ae7f142199da1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBR.png using Guid(00e832919ccafef49ae7f142199da1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c691ec5af44c6ed7e68429f435da2d6') in 0.015242 seconds 
+  Import took 0.018053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveUL.png
+  artifactKey: Guid(9a32cab12f3374f4bb2b93a674b6ad62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveUL.png using Guid(9a32cab12f3374f4bb2b93a674b6ad62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008df80e970de251a022908b1f92519a') in 0.014600 seconds 
+  Import took 0.017803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordBronze.png
+  artifactKey: Guid(162f03dda1790344bb6946cd481ce8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordBronze.png using Guid(162f03dda1790344bb6946cd481ce8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd18f583fcde0c2900a8519a7f099b78') in 0.014344 seconds 
+  Import took 0.017562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBottom.png
+  artifactKey: Guid(5f36234d8f5de374483a90dc2373f513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBottom.png using Guid(5f36234d8f5de374483a90dc2373f513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2390077f497b3d8c853400c14608b2') in 0.015873 seconds 
+  Import took 0.019252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveSpikeBottom.png
+  artifactKey: Guid(4857ad6fb2cb8d64596c7a520fb5fdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveSpikeBottom.png using Guid(4857ad6fb2cb8d64596c7a520fb5fdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ba9d199615c6e42a460c0e5b25970a') in 0.015488 seconds 
+  Import took 0.018520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/umbrellaClosed.png
+  artifactKey: Guid(895bf9a868fa3ee499ac936f05ea0f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/umbrellaClosed.png using Guid(895bf9a868fa3ee499ac936f05ea0f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d4423e2f357d1dc46c51b1e5b78774') in 0.015056 seconds 
+  Import took 0.018063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/tile_21.png
+  artifactKey: Guid(995af7d24651b61488b598890191da04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/tile_21.png using Guid(995af7d24651b61488b598890191da04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc3c523fbdbb154fe68b53593d4204e') in 0.014723 seconds 
+  Import took 0.018243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/umbrellaOpen.png
+  artifactKey: Guid(28854cf2607a1cc4c9fc299de6963df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/umbrellaOpen.png using Guid(28854cf2607a1cc4c9fc299de6963df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ef283696bc499cb98b585008f25581') in 0.016200 seconds 
+  Import took 0.019179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunPurpleBig.png
+  artifactKey: Guid(b05fa222d20383a4399c4e2fa2c30501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunPurpleBig.png using Guid(b05fa222d20383a4399c4e2fa2c30501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb950bfb44e587ceb8009efa94af30b') in 0.015966 seconds 
+  Import took 0.020259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireRight.png
+  artifactKey: Guid(30021decc50b5fe49b3b9a9920354319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireRight.png using Guid(30021decc50b5fe49b3b9a9920354319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8110f2b3e95a7488d2babd381551b990') in 0.016315 seconds 
+  Import took 0.019147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldBronze.png
+  artifactKey: Guid(b4ae1da90fbefcd40a40cc2d7afb16b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldBronze.png using Guid(b4ae1da90fbefcd40a40cc2d7afb16b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553798df30e4d08ee43c7b0ae6893f4b') in 0.016823 seconds 
+  Import took 0.019797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunBig.png
+  artifactKey: Guid(58ee903d2c75a714b85f62ccef1f06de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunBig.png using Guid(58ee903d2c75a714b85f62ccef1f06de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87690287f8ce8ef77ac747200a60943') in 0.013860 seconds 
+  Import took 0.017479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldGold.png
+  artifactKey: Guid(aab4fbcc9a40a2545bcceb54462948fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldGold.png using Guid(aab4fbcc9a40a2545bcceb54462948fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86610622d93acd66d1ce5646b1115e14') in 0.017967 seconds 
+  Import took 0.022230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireLeft.png
+  artifactKey: Guid(22ebae677a08c924fac0e8f4bdf3e84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireLeft.png using Guid(22ebae677a08c924fac0e8f4bdf3e84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99db2c49c16922a48f13d6e70e105c2c') in 0.013759 seconds 
+  Import took 0.016613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveSpikeTop.png
+  artifactKey: Guid(515d7fad0835c83499f998ea5f2df3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveSpikeTop.png using Guid(515d7fad0835c83499f998ea5f2df3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85065e453a6d2a2941963597674a59a5') in 0.017341 seconds 
+  Import took 0.020366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalRight.png
+  artifactKey: Guid(f59591104bac3594bab37cf450561421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalRight.png using Guid(f59591104bac3594bab37cf450561421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb207c4a6c8c152f3cf3a305603952c') in 0.014021 seconds 
+  Import took 0.017631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireBottomRight.png
+  artifactKey: Guid(9ef99f87d4d7f7948aec932db4c5fc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireBottomRight.png using Guid(9ef99f87d4d7f7948aec932db4c5fc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c3b3066831d5a87a1ff785ab141140') in 0.018317 seconds 
+  Import took 0.022129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveTop.png
+  artifactKey: Guid(285c37a2f29eeb5418bbcc09aaca3816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveTop.png using Guid(285c37a2f29eeb5418bbcc09aaca3816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0280393028eeda09da7a34e8a42b230b') in 0.015842 seconds 
+  Import took 0.018958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygun.png
+  artifactKey: Guid(6ab3b731243566e4b84f9fa4d3faf14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygun.png using Guid(6ab3b731243566e4b84f9fa4d3faf14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41400b7fe1cc53c13ae3933336a338f') in 0.014219 seconds 
+  Import took 0.017474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveRockSmall.png
+  artifactKey: Guid(993d37fd58d8a794182653d40384a2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveRockSmall.png using Guid(993d37fd58d8a794182653d40384a2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e57d49d26d8ae20e51e3453b790831') in 0.016668 seconds 
+  Import took 0.020702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveRockLarge.png
+  artifactKey: Guid(d8e0c44fd0b0e2649a93a7f98f3a3ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveRockLarge.png using Guid(d8e0c44fd0b0e2649a93a7f98f3a3ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fceb68dfb32a86ca1d84453a96781c26') in 0.015875 seconds 
+  Import took 0.019061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatform.png
+  artifactKey: Guid(26faca9c8cd9d7045a41e1ec9148d731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatform.png using Guid(26faca9c8cd9d7045a41e1ec9148d731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedc7ddc47925c13c2d2e736c4e46d1e') in 0.015432 seconds 
+  Import took 0.018271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordGold.png
+  artifactKey: Guid(1a46768908874ef4487dbc52b4beba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordGold.png using Guid(1a46768908874ef4487dbc52b4beba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fccd8126cacf9146359f8d408bca3f61') in 0.015474 seconds 
+  Import took 0.018397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/tile_20.png
+  artifactKey: Guid(bb8ab74352cedb249b2fa54522e4a274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/tile_20.png using Guid(bb8ab74352cedb249b2fa54522e4a274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b10a7ff628124e21e2a96a8402463d') in 0.016723 seconds 
+  Import took 0.020021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireHook.png
+  artifactKey: Guid(d2910dabf5fb8c44a8c3fc8cc29fb381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireHook.png using Guid(d2910dabf5fb8c44a8c3fc8cc29fb381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96199590fe7331ee917c025c1346d81') in 0.015979 seconds 
+  Import took 0.019083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordSilver.png
+  artifactKey: Guid(519f141a3510e324998ce511224b485a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/swordSilver.png using Guid(519f141a3510e324998ce511224b485a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d030af5a1a2c23fda3ef545622539f') in 0.015604 seconds 
+  Import took 0.018554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunPurple.png
+  artifactKey: Guid(beb1a82ccb0f8c84aabd82c0a001601f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/raygunPurple.png using Guid(beb1a82ccb0f8c84aabd82c0a001601f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0c18528c3efe3972cd543bb07a6bb9') in 0.014626 seconds 
+  Import took 0.017568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchYellowOff.png
+  artifactKey: Guid(a12f3c9afd132be4bb700a7c492aa39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchYellowOff.png using Guid(a12f3c9afd132be4bb700a7c492aa39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05b9c2bfda546aca5d59d5f0ea29627') in 0.015640 seconds 
+  Import took 0.019063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveUR.png
+  artifactKey: Guid(9b496cf454a6dee418a12d52f0ecc8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveUR.png using Guid(9b496cf454a6dee418a12d52f0ecc8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207a07989f8e2c87da8bd881b4d6883b') in 0.015020 seconds 
+  Import took 0.018030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserPurpleDot.png
+  artifactKey: Guid(ecddd0b8c8048dd408ca633e83207c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserPurpleDot.png using Guid(ecddd0b8c8048dd408ca633e83207c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6e44289d27e6c483a9c5d42d3b0341') in 0.015425 seconds 
+  Import took 0.018258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamNarrow.png
+  artifactKey: Guid(264b4369a9a32ea4797b39b2aea70261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamNarrow.png using Guid(264b4369a9a32ea4797b39b2aea70261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515985b82042feaf63e214150f654213') in 0.016304 seconds 
+  Import took 0.019132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBR.png
+  artifactKey: Guid(40afb66d3a587704180b7bcc1935317a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBR.png using Guid(40afb66d3a587704180b7bcc1935317a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa1bf856e2041c855e8b6072f108a04') in 0.013442 seconds 
+  Import took 0.017258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedHorizontal.png
+  artifactKey: Guid(df3274560cf9d0344851e9aae5ec10bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRedHorizontal.png using Guid(df3274560cf9d0344851e9aae5ec10bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593a9293948018fd116269bfe304404c') in 0.016223 seconds 
+  Import took 0.019333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBoltsHoles.png
+  artifactKey: Guid(71c9de67c882bbf4e942d8d3db2efef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBoltsHoles.png using Guid(71c9de67c882bbf4e942d8d3db2efef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1875719b5d30e36cec76b1826ca428') in 0.014431 seconds 
+  Import took 0.017405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchYellowOn.png
+  artifactKey: Guid(24212e50045dd8c4898b25644ea9ba96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchYellowOn.png using Guid(24212e50045dd8c4898b25644ea9ba96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b595960eac9f5614263806812e90756a') in 0.014929 seconds 
+  Import took 0.017908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowBurst.png
+  artifactKey: Guid(33b5b6c67749ef642873d7ce4869b2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserYellowBurst.png using Guid(33b5b6c67749ef642873d7ce4869b2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124312c7fa881ad63f1a125e4d9b20d1') in 0.016646 seconds 
+  Import took 0.019483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalf.png
+  artifactKey: Guid(d1be4b7f5980275419fea6196c69d56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalf.png using Guid(d1be4b7f5980275419fea6196c69d56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d84bfe3d86d9dfd0da0bfbc080454e') in 0.015328 seconds 
+  Import took 0.018823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalLeft.png
+  artifactKey: Guid(01147845d30e8d54dbc5ca693cf70fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalLeft.png using Guid(01147845d30e8d54dbc5ca693cf70fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1100dec09288a33220b6848724ba5c') in 0.016836 seconds 
+  Import took 0.020147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRight.png
+  artifactKey: Guid(de1720704906b124191cf996436b7e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserRight.png using Guid(de1720704906b124191cf996436b7e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3802be9539594432d745e3a2c5d2be9d') in 0.018799 seconds 
+  Import took 0.022200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenterSticker.png
+  artifactKey: Guid(933d904a0cdc76c43b7cfa6de5e37161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenterSticker.png using Guid(933d904a0cdc76c43b7cfa6de5e37161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e786aa723fdee8e67ac231e6836f19e') in 0.016139 seconds 
+  Import took 0.018811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatformWire.png
+  artifactKey: Guid(ad9b888d17505a7458ddde65516543da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatformWire.png using Guid(ad9b888d17505a7458ddde65516543da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ca3a1d88d77ef8c00d3037e82d8164') in 0.015943 seconds 
+  Import took 0.018834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenHorizontal.png
+  artifactKey: Guid(23744f31af00673498de04dcfe55279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserGreenHorizontal.png using Guid(23744f31af00673498de04dcfe55279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960a98091fa29e84cd58972d7b48d3ef') in 0.016831 seconds 
+  Import took 0.019611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metal.png
+  artifactKey: Guid(f6d26f2a8b5c270499deaba8ac44551e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metal.png using Guid(f6d26f2a8b5c270499deaba8ac44551e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48840bfc2038f17abcf8edeaf9b771a1') in 0.015990 seconds 
+  Import took 0.019207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000707 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffRight.png
+  artifactKey: Guid(35ff6316e341ae54786e15831be2a3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCliffRight.png using Guid(35ff6316e341ae54786e15831be2a3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171b9205d4720c3003a02db8d40de46c') in 0.014964 seconds 
+  Import took 0.018518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalFenceAlt.png
+  artifactKey: Guid(7acede6d3c2b11f4a819ee45f38792e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalFenceAlt.png using Guid(7acede6d3c2b11f4a819ee45f38792e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585566d1fc1ffc654204a0a1ef18daba') in 0.013675 seconds 
+  Import took 0.017601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchGreenOn.png
+  artifactKey: Guid(c5817fef982c0154d91f50801b5be6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserSwitchGreenOn.png using Guid(c5817fef982c0154d91f50801b5be6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bfebcb34faa2ed350b74448a6f615f') in 0.018407 seconds 
+  Import took 0.021283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveUR.png
+  artifactKey: Guid(ceba48bdf2e0aa241994ebd2f35c291e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveUR.png using Guid(ceba48bdf2e0aa241994ebd2f35c291e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979166448e536d16bda6d6dac82b0e2f') in 0.019485 seconds 
+  Import took 0.022498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveUL.png
+  artifactKey: Guid(27e817175d2626d449b75bda05cb355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveUL.png using Guid(27e817175d2626d449b75bda05cb355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a960d915db023468d839bd66a72354') in 0.018177 seconds 
+  Import took 0.021258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserDownShoot.png
+  artifactKey: Guid(72a1b878d6da439479d638732c094f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/laserDownShoot.png using Guid(72a1b878d6da439479d638732c094f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08aa4e5ff309bffb65422c4ae810505b') in 0.016348 seconds 
+  Import took 0.019549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfMid.png
+  artifactKey: Guid(87a7acce894669e49a8aa2c1e4b4cd51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfMid.png using Guid(87a7acce894669e49a8aa2c1e4b4cd51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488096938fdf8fb35b6a835448d5c628') in 0.016900 seconds 
+  Import took 0.019718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfRight.png
+  artifactKey: Guid(78d85b61bb74e574ab06d294be6b2a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalHalfRight.png using Guid(78d85b61bb74e574ab06d294be6b2a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6e1dc0d56ed2cd6466a9fae187b1ec') in 0.014097 seconds 
+  Import took 0.016961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveRockSmall.png
+  artifactKey: Guid(014e40ba219c76548a7e2bb5cd74ad6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveRockSmall.png using Guid(014e40ba219c76548a7e2bb5cd74ad6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3f31a2c88c166ade7026fded015ef3') in 0.014800 seconds 
+  Import took 0.018540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatformWireAlt.png
+  artifactKey: Guid(5d0c279cbcebe304b95268e93e58f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalPlatformWireAlt.png using Guid(5d0c279cbcebe304b95268e93e58f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849cb43689d266152f31a00b581d426a') in 0.016376 seconds 
+  Import took 0.019762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBolts.png
+  artifactKey: Guid(24d042b318c43194d8d627e1c4fda6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamBolts.png using Guid(24d042b318c43194d8d627e1c4fda6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f2b362b5f9f3000ad07a850859732e') in 0.015988 seconds 
+  Import took 0.019628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireBottomLeft.png
+  artifactKey: Guid(7a9a5519d6676434bb94422700da4879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/wireBottomLeft.png using Guid(7a9a5519d6676434bb94422700da4879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52478264bdd8358547d28f0c8e7156d8') in 0.019330 seconds 
+  Import took 0.022410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamHoles.png
+  artifactKey: Guid(ef362bfcd216b8448bf31c15c62d32ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/beamHoles.png using Guid(ef362bfcd216b8448bf31c15c62d32ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f77467c8a2eac7c79c3c91ca1aa563') in 0.017461 seconds 
+  Import took 0.020392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBL.png
+  artifactKey: Guid(64b4083629d0f5849843d95ef8582465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/stoneCaveBL.png using Guid(64b4083629d0f5849843d95ef8582465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc40344ac0be936da3af3f67923b6e5') in 0.015420 seconds 
+  Import took 0.019095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001631 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBottom.png
+  artifactKey: Guid(fed3528ebd07b594c846b35170707abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBottom.png using Guid(fed3528ebd07b594c846b35170707abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84663b961acfe5364b8d77aefc2af1e9') in 0.015469 seconds 
+  Import took 0.018634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenterWarning.png
+  artifactKey: Guid(6ef3fc9407023bc48ba6243bcd7c1b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/metalCenterWarning.png using Guid(6ef3fc9407023bc48ba6243bcd7c1b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185ee53769dda3a7c5aeec2308710c25') in 0.016997 seconds 
+  Import took 0.020253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBL.png
+  artifactKey: Guid(147ad6cca2e70f146a289f24d2b24b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/dirtCaveBL.png using Guid(147ad6cca2e70f146a289f24d2b24b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8cd6ef64a8d383f0c9b22a862d1991') in 0.016670 seconds 
+  Import took 0.019590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldSilver.png
+  artifactKey: Guid(10ee18cfabf68af45be5c86dff4571dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Request pack/Tiles/shieldSilver.png using Guid(10ee18cfabf68af45be5c86dff4571dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ac84549ccf1956c5cbc61781b561da') in 0.014790 seconds 
+  Import took 0.017812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.413156 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Candy expansion
+  artifactKey: Guid(f406cd05b3b3d734fa7520f4e72d04fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Candy expansion using Guid(f406cd05b3b3d734fa7520f4e72d04fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1695695c16e401be87f67b136d4b3a7') in 0.008824 seconds 
+  Import took 0.012398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002577 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Candy expansion
+  artifactKey: Guid(f406cd05b3b3d734fa7520f4e72d04fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Candy expansion using Guid(f406cd05b3b3d734fa7520f4e72d04fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1695695c16e401be87f67b136d4b3a7') in 0.003477 seconds 
+  Import took 0.006935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071077 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/preview.png
+  artifactKey: Guid(a2567d410364ae84d9ab3eea62ed40b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/preview.png using Guid(a2567d410364ae84d9ab3eea62ed40b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397248fbbab6a7cb603c08ac23ab3fd4') in 0.017907 seconds 
+  Import took 0.021057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/sample.png
+  artifactKey: Guid(a797af3cbf1fbf84cbbba7a57a1e6bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/sample.png using Guid(a797af3cbf1fbf84cbbba7a57a1e6bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e087a4690cdeb7bdc80b0f709a68abd') in 0.024778 seconds 
+  Import took 0.027795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/sheet.png
+  artifactKey: Guid(0cb38c357846c6744bb12d02ba2c8908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/platformer-art-complete-pack-0/Candy expansion/sheet.png using Guid(0cb38c357846c6744bb12d02ba2c8908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd229a45639dc5dc76288e901016e9a37') in 0.033723 seconds 
+  Import took 0.037154 seconds .
+
