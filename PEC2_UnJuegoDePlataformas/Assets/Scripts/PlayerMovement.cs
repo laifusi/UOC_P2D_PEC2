@@ -9,9 +9,10 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private float horizontal;
+    private Vector3 initialPosition;
 
-    [SerializeField] float velocity = 1;
-    [SerializeField] float jumpForce = 1;
+    [SerializeField] float velocity = 5;
+    [SerializeField] float jumpForce = 5;
     [SerializeField] Transform feet;
     [SerializeField] float groundedCheckRadius = 0.1f;
     [SerializeField] LayerMask floorMask;
@@ -21,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        initialPosition = transform.position;
     }
 
     private void Update()
@@ -55,5 +58,10 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(feet.position, groundedCheckRadius, floorMask);
+    }
+
+    public void Die()
+    {
+        transform.position = initialPosition;
     }
 }
