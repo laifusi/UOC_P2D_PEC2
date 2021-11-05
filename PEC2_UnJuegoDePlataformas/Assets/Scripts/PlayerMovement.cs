@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float horizontal;
     private Vector3 initialPosition;
+    private bool super;
+    private bool invulnerable;
 
     [SerializeField] float velocity = 5;
     [SerializeField] float jumpForce = 5;
@@ -24,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         initialPosition = transform.position;
+        super = false;
+        invulnerable = false;
     }
 
     private void Update()
@@ -60,8 +64,50 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(feet.position, groundedCheckRadius, floorMask);
     }
 
+    public void TakeDamage()
+    {
+        if (invulnerable)
+            return;
+
+        if(super)
+        {
+            super = false;
+            transform.localScale = new Vector3(1, 1, 1);
+            StartCoroutine(Invulnerability());
+        }
+        else
+        {
+            Die();
+        }
+    }
+
     public void Die()
     {
         transform.position = initialPosition;
+        transform.localScale = new Vector3(1, 1, 1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Mushroom"))
+        {
+            super = true;
+            transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+        }
+    }
+
+    private IEnumerator Invulnerability()
+    {
+        invulnerable = true;
+        int i = 0;
+        while (i < 4)
+        {
+            yield return new WaitForSeconds(0.25f);
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+            yield return new WaitForSeconds(0.25f);
+            spriteRenderer.color = new Color(1, 1, 1, 1);
+            i++;
+        }
+        invulnerable = false;
     }
 }

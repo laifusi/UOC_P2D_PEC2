@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                player.Die();
+                player.TakeDamage();
             }
         }
     }
