@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform leftSensor;
     [SerializeField] Transform rightSensor;
     [SerializeField] float sensorDistanceCheck = 0.1f;
+    [SerializeField] LayerMask wallLayerMask;
 
     private void Start()
     {
@@ -34,14 +35,14 @@ public class Enemy : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(xDirection * velocity, rigidbody2d.velocity.y);
 
-        sensorHit = Physics2D.Raycast(currentSensor.position, new Vector2(xDirection, 0), sensorDistanceCheck);
+        sensorHit = Physics2D.Raycast(currentSensor.position, new Vector2(xDirection, 0), sensorDistanceCheck, wallLayerMask);
         if(sensorHit)
         {
             ChangeDirection();
         }
-
+        
         sensorHit = Physics2D.Raycast(currentSensor.position, Vector2.down, sensorDistanceCheck);
-        if(!sensorHit)
+        if (!sensorHit)
         {
             ChangeDirection();
         }

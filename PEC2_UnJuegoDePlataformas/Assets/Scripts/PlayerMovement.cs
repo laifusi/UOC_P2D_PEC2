@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundedCheckRadius = 0.1f;
     [SerializeField] LayerMask floorMask;
 
+    public bool IsSuper => super;
+
     private void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();

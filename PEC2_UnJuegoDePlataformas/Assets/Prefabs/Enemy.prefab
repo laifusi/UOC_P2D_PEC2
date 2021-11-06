@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1483273142785682985}
   - component: {fileID: 1483273142785682981}
   - component: {fileID: 1483273142785682980}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,6 +105,10 @@ MonoBehaviour:
   leftSensor: {fileID: 1483273142846358470}
   rightSensor: {fileID: 1483273143962657102}
   sensorDistanceCheck: 0.1
+  shouldntFallOff: 1
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!70 &1483273142785682985
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483273142846358470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483273143962657102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
