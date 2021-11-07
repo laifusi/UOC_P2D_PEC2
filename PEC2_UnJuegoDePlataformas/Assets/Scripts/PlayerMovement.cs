@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool invulnerable;
     private float velocityMultiplier;
     private float timePassed;
+    private bool onLeftInvisibleWall;
 
     [SerializeField] float velocity = 5;
     [SerializeField] float jumpForce = 5;
@@ -38,8 +39,14 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-
-        rigidbody2d.velocity = new Vector2(horizontal * velocity, rigidbody2d.velocity.y);
+        if(horizontal < 0 && onLeftInvisibleWall)
+        {
+            rigidbody2d.velocity = new Vector2(0, rigidbody2d.velocity.y);
+        }
+        else
+        {
+            rigidbody2d.velocity = new Vector2(horizontal * velocity, rigidbody2d.velocity.y);
+        }
 
         animator.SetBool("walking", horizontal != 0);
 
@@ -114,6 +121,18 @@ public class PlayerMovement : MonoBehaviour
         {
             super = true;
             transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+        }
+        else if(collision.CompareTag("LeftInvisibleWall"))
+        {
+            onLeftInvisibleWall = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("LeftInvisibleWall"))
+        {
+            onLeftInvisibleWall = false;
         }
     }
 

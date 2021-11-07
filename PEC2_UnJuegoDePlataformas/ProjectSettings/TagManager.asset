@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mushroom
   - Void
+  - LeftInvisibleWall
   layers:
   - Default
   - TransparentFX
