@@ -121,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         {
             super = true;
             transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+            Destroy(collision.gameObject);
         }
         else if(collision.CompareTag("LeftInvisibleWall"))
         {
