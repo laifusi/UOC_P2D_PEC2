@@ -10483,12 +10483,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
-  jumpForce: 5
+  jumpForce: 7
   feet: {fileID: 1248323193}
   groundedCheckRadius: 0.1
   floorMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
+  maxJumpTime: 0.4
 --- !u!95 &229294262
 Animator:
   serializedVersion: 3
@@ -12374,7 +12375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.08
+      value: -6.08
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12769,7 +12770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12892,7 +12893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1622234107048036704, guid: 0e98b3cb53dbe3a42810c049080af924, type: 3}
       propertyPath: m_LocalPosition.z

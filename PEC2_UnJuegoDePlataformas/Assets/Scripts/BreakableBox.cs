@@ -8,7 +8,6 @@ public class BreakableBox : HittableFromBelow
     {
         if(playerIsSuper)
         {
-            Debug.Log("Break block");
             Destroy(gameObject);
         }
     }

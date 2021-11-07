@@ -24,7 +24,6 @@ public class Enemy : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider2d = GetComponent<Collider2D>();
 
-
         spriteRenderer.flipX = xDirection > 0;
         currentSensor = xDirection > 0 ? rightSensor : leftSensor;
         if(xDirection > 0)
@@ -41,11 +40,11 @@ public class Enemy : MonoBehaviour
             ChangeDirection();
         }
         
-        sensorHit = Physics2D.Raycast(currentSensor.position, Vector2.down, sensorDistanceCheck);
+        /*sensorHit = Physics2D.Raycast(currentSensor.position, Vector2.down, sensorDistanceCheck);
         if (!sensorHit)
         {
             ChangeDirection();
-        }
+        }*/
     }
 
     private void ChangeDirection()
@@ -69,6 +68,14 @@ public class Enemy : MonoBehaviour
             {
                 player.TakeDamage();
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Void"))
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -12,12 +12,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 initialPosition;
     private bool super;
     private bool invulnerable;
+    private float velocityMultiplier;
+    private float timePassed;
 
     [SerializeField] float velocity = 5;
     [SerializeField] float jumpForce = 5;
     [SerializeField] Transform feet;
     [SerializeField] float groundedCheckRadius = 0.1f;
     [SerializeField] LayerMask floorMask;
+    [SerializeField] float maxJumpTime = 1;
 
     public bool IsSuper => super;
 
@@ -45,13 +48,22 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = horizontal < 0;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        timePassed += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
+            timePassed = 0;
         }
         else
         {
             animator.SetBool("jumping", !IsGrounded());
+            velocityMultiplier = 0;
+        }
+
+        if(Input.GetKey(KeyCode.Space) && timePassed <= maxJumpTime)
+        {
+            JumpLonger();
         }
     }
 
@@ -59,6 +71,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
         animator.SetBool("jumping", true);
+    }
+
+    private void JumpLonger()
+    {
+        velocityMultiplier += Time.deltaTime * velocity;
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
     }
 
     private bool IsGrounded()
@@ -87,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = initialPosition;
         transform.localScale = new Vector3(1, 1, 1);
+        super = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
