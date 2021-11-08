@@ -1,18 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int coinsCollected;
+
+    public static Action<int> OnCoinCollected;
+
+    private void Start()
     {
-        
+        ResetCoins();
+        Coin.OnCoinPickedUp += CollectCoin;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CollectCoin()
     {
-        
+        coinsCollected++;
+        OnCoinCollected?.Invoke(coinsCollected);
+    }
+
+    public void ResetCoins()
+    {
+        coinsCollected = 0;
+    }
+
+    private void OnDisable()
+    {
+        Coin.OnCoinPickedUp -= CollectCoin;
     }
 }

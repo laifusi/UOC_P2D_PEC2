@@ -6,11 +6,11 @@ public class CoinsTextUpdater : TextUpdater
 {
     protected override void SubscribeToEvent()
     {
-        throw new System.NotImplementedException();
+        CoinsManager.OnCoinCollected += UpdateText;
     }
 
     protected override void UnsubscribeFromEvent()
     {
-        throw new System.NotImplementedException();
+        CoinsManager.OnCoinCollected -= UpdateText;
     }
 }
