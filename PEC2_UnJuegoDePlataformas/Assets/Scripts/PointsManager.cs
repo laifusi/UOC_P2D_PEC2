@@ -22,6 +22,7 @@ public class PointsManager : MonoBehaviour
         PlayerMovement.OnPowerUpPickedUp += PowerUpPickedUp;
         Enemy.OnEnemyKilled += EnemyKilled;
         BreakableBox.OnBoxBroken += BoxBroken;
+        Flag.OnFlagReached += FlagReached;
     }
 
     public void ResetPoints()
@@ -53,11 +54,18 @@ public class PointsManager : MonoBehaviour
         OnPointsChanged?.Invoke(totalPoints);
     }
 
+    private void FlagReached(int flagPoints)
+    {
+        totalPoints += flagPoints;
+        OnPointsChanged?.Invoke(totalPoints);
+    }
+
     private void OnDisable()
     {
         Coin.OnCoinPickedUp -= CoinPickedUp;
         PlayerMovement.OnPowerUpPickedUp -= PowerUpPickedUp;
         Enemy.OnEnemyKilled -= EnemyKilled;
         BreakableBox.OnBoxBroken -= BoxBroken;
+        Flag.OnFlagReached -= FlagReached;
     }
 }
