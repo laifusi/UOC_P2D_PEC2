@@ -12,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 initialPosition;
     private bool super;
     private bool invulnerable;
-    private float velocityMultiplier;
+    private float jumpForce;
     private float timePassed;
     private bool onLeftInvisibleWall;
 
     [SerializeField] float velocity = 5;
-    [SerializeField] float jumpForce = 5;
+    [SerializeField] float minJumpForce = 2;
+    [SerializeField] float jumpForceMultiplier = 2;
+    [SerializeField] float maxJumpForce = 7;
     [SerializeField] Transform feet;
     [SerializeField] float groundedCheckRadius = 0.1f;
     [SerializeField] LayerMask floorMask;
@@ -65,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool("jumping", !IsGrounded());
-            velocityMultiplier = 0;
         }
 
         if(Input.GetKey(KeyCode.Space) && timePassed <= maxJumpTime)
@@ -76,13 +77,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
+        jumpForce = minJumpForce;
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
         animator.SetBool("jumping", true);
     }
 
     private void JumpLonger()
     {
-        velocityMultiplier += Time.deltaTime * velocity;
+        jumpForce += jumpForceMultiplier;
+        if (jumpForce > maxJumpForce)
+            jumpForce = maxJumpForce;
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
     }
 

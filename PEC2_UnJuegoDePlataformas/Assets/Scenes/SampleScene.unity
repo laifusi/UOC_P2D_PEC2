@@ -11007,7 +11007,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
-  jumpForce: 7
+  minJumpForce: 2
+  jumpForceMultiplier: 0.05
+  maxJumpForce: 7
   feet: {fileID: 1248323193}
   groundedCheckRadius: 0.1
   floorMask:
