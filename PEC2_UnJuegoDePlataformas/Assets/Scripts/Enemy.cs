@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float sensorDistanceCheck = 0.1f;
     [SerializeField] LayerMask wallLayerMask;
 
+    public static Action OnEnemyKilled;
+
     private void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -81,6 +83,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        OnEnemyKilled?.Invoke();
         StartCoroutine(Fade());
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetTrigger("die");

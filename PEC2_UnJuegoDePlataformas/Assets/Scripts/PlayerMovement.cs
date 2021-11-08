@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsSuper => super;
 
+    public static Action OnPowerUpPickedUp;
+
     private void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -125,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
         {
             super = true;
             transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+            OnPowerUpPickedUp?.Invoke();
             Destroy(collision.gameObject);
         }
         else if(collision.CompareTag("LeftInvisibleWall"))
