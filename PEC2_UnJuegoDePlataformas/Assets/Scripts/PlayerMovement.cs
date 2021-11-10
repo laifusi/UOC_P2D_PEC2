@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public bool IsSuper => super;
 
     public static Action OnPowerUpPickedUp;
+    public static Action OnDied;
 
     private void Awake()
     {
@@ -119,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = initialPosition;
         transform.localScale = new Vector3(1, 1, 1);
         super = false;
+        OnDied?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

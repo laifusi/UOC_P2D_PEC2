@@ -13,6 +13,9 @@ public class PointsManager : MonoBehaviour
     private int totalPoints;
 
     public static Action<int> OnPointsChanged;
+    public static Action OnGameWon;
+
+    public int TotalPoints => totalPoints;
 
     private void Start()
     {
@@ -58,6 +61,7 @@ public class PointsManager : MonoBehaviour
     {
         totalPoints += flagPoints;
         OnPointsChanged?.Invoke(totalPoints);
+        OnGameWon?.Invoke();
     }
 
     private void OnDisable()

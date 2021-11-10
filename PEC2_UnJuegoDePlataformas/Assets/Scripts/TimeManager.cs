@@ -9,6 +9,8 @@ public class TimeManager : MonoBehaviour
 
     private float timePassed;
 
+    public float TotalTimePassed => timePassed;
+
     private void Start()
     {
         ResetTime();

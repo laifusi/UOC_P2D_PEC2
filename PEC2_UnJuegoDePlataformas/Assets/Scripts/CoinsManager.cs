@@ -9,6 +9,8 @@ public class CoinsManager : MonoBehaviour
 
     public static Action<int> OnCoinCollected;
 
+    public int TotalCoinsCollected => coinsCollected;
+
     private void Start()
     {
         ResetCoins();
