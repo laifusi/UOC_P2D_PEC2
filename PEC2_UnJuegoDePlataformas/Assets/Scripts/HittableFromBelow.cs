@@ -6,6 +6,8 @@ public abstract class HittableFromBelow : MonoBehaviour
 {
     protected bool hittable = true;
 
+    [SerializeField] protected GameObject[] possiblePrefabs;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var player = collision.collider.GetComponent<PlayerMovement>();
@@ -19,4 +21,13 @@ public abstract class HittableFromBelow : MonoBehaviour
     }
 
     public abstract void GotHitFromBelow(bool playerIsSuper);
+
+    protected void PrefabOutOfBox()
+    {
+        int randomInt = Random.Range(0, possiblePrefabs.Length);
+        var gameObject = Instantiate(possiblePrefabs[randomInt], transform.position, Quaternion.identity, transform);
+        Animator animator = gameObject.GetComponent<Animator>();
+        if (animator != null)
+            animator.SetTrigger("OutOfBox");
+    }
 }
