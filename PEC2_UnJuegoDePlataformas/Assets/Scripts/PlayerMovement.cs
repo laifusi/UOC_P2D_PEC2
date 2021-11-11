@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 initialPosition;
     private bool super;
     private bool invulnerable;
-    private float jumpForce;
     private float timePassed;
     private bool onLeftInvisibleWall;
 
@@ -72,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("jumping", !IsGrounded());
         }
 
-        if(Input.GetKey(KeyCode.Space) && timePassed <= maxJumpTime)
+        if(Input.GetKey(KeyCode.Space) && timePassed <= maxJumpTime && rigidbody2d.velocity.y + jumpForceMultiplier <= maxJumpForce)
         {
             JumpLonger();
         }
@@ -80,17 +79,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        jumpForce = minJumpForce;
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, minJumpForce);
         animator.SetBool("jumping", true);
     }
 
     private void JumpLonger()
     {
-        jumpForce += jumpForceMultiplier;
-        if (jumpForce > maxJumpForce)
-            jumpForce = maxJumpForce;
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
+        rigidbody2d.velocity += new Vector2(0, jumpForceMultiplier);
     }
 
     private bool IsGrounded()

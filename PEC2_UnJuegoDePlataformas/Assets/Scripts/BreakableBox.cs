@@ -42,8 +42,6 @@ public class BreakableBox : HittableFromBelow
     {
         particles.SetActive(true);
         GetComponentInChildren<SpriteRenderer>().enabled = false;
-        yield return null;
-        GetComponent<Collider2D>().enabled = false;
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }

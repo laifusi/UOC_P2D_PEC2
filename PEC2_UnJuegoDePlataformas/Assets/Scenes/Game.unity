@@ -11032,7 +11032,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -11134,8 +11134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 5
   minJumpForce: 2
-  jumpForceMultiplier: 0.05
-  maxJumpForce: 7
+  jumpForceMultiplier: 0.5
+  maxJumpForce: 8
   feet: {fileID: 1248323193}
   groundedCheckRadius: 0.1
   floorMask:
