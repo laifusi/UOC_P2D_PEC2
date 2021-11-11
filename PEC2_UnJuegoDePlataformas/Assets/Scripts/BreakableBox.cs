@@ -12,6 +12,7 @@ public class BreakableBox : HittableFromBelow
     private int coinsTaken;
 
     [SerializeField] int maxPossibleAmountOfCoins = 5;
+    [SerializeField] GameObject particles;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class BreakableBox : HittableFromBelow
         if(playerIsSuper)
         {
             OnBoxBroken?.Invoke();
-            Destroy(gameObject);
+            StartCoroutine(DestroyBox());
         }
         else
         {
@@ -35,5 +36,15 @@ public class BreakableBox : HittableFromBelow
                 coinsTaken++;
             }
         }
+    }
+
+    private IEnumerator DestroyBox()
+    {
+        particles.SetActive(true);
+        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        yield return null;
+        GetComponent<Collider2D>().enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
 }

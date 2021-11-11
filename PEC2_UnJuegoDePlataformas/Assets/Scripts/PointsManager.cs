@@ -13,6 +13,7 @@ public class PointsManager : MonoBehaviour
     private int totalPoints;
 
     public static Action<int> OnPointsChanged;
+    public static Action<int> OnPointsAdded;
     public static Action OnGameWon;
 
     public int TotalPoints => totalPoints;
@@ -37,30 +38,35 @@ public class PointsManager : MonoBehaviour
     {
         totalPoints += pointsPerCoin;
         OnPointsChanged?.Invoke(totalPoints);
+        OnPointsAdded?.Invoke(pointsPerCoin);
     }
 
     private void PowerUpPickedUp()
     {
         totalPoints += pointsPerPowerUp;
         OnPointsChanged?.Invoke(totalPoints);
+        OnPointsAdded?.Invoke(pointsPerPowerUp);
     }
 
     private void EnemyKilled()
     {
         totalPoints += pointsPerEnemyKilled;
         OnPointsChanged?.Invoke(totalPoints);
+        OnPointsAdded?.Invoke(pointsPerEnemyKilled);
     }
 
     private void BoxBroken()
     {
         totalPoints += pointsPerBrokenBox;
         OnPointsChanged?.Invoke(totalPoints);
+        OnPointsAdded?.Invoke(pointsPerBrokenBox);
     }
 
     private void FlagReached(int flagPoints)
     {
         totalPoints += flagPoints;
         OnPointsChanged?.Invoke(totalPoints);
+        OnPointsAdded?.Invoke(flagPoints);
         OnGameWon?.Invoke();
     }
 
