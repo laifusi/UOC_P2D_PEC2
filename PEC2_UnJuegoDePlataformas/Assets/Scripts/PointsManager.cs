@@ -23,7 +23,7 @@ public class PointsManager : MonoBehaviour
         ResetPoints();
 
         Coin.OnCoinPickedUp += CoinPickedUp;
-        PlayerMovement.OnPowerUpPickedUp += PowerUpPickedUp;
+        Player.OnPowerUpPickedUp += PowerUpPickedUp;
         Enemy.OnEnemyKilled += EnemyKilled;
         BreakableBox.OnBoxBroken += BoxBroken;
         Flag.OnFlagReached += FlagReached;
@@ -73,7 +73,7 @@ public class PointsManager : MonoBehaviour
     private void OnDisable()
     {
         Coin.OnCoinPickedUp -= CoinPickedUp;
-        PlayerMovement.OnPowerUpPickedUp -= PowerUpPickedUp;
+        Player.OnPowerUpPickedUp -= PowerUpPickedUp;
         Enemy.OnEnemyKilled -= EnemyKilled;
         BreakableBox.OnBoxBroken -= BoxBroken;
         Flag.OnFlagReached -= FlagReached;

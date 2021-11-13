@@ -10,7 +10,7 @@ public abstract class HittableFromBelow : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = collision.collider.GetComponent<PlayerMovement>();
+        var player = collision.collider.GetComponent<Player>();
         if (player == null || !hittable)
             return;
 

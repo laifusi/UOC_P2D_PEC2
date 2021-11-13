@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidbody2d;
     private Animator animator;
@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool invulnerable;
     private float timePassed;
     private bool onLeftInvisibleWall;
+    private AudioSource audioSource;
 
     [SerializeField] float velocity = 5;
     [SerializeField] float minJumpForce = 2;
@@ -23,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundedCheckRadius = 0.1f;
     [SerializeField] LayerMask floorMask;
     [SerializeField] float maxJumpTime = 1;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioClip powerUpSound;
 
     public bool IsSuper => super;
 
@@ -34,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         initialPosition = transform.position;
         super = false;
@@ -81,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, minJumpForce);
         animator.SetBool("jumping", true);
+        audioSource.PlayOneShot(jumpSound);
     }
 
     private void JumpLonger()
@@ -98,8 +104,9 @@ public class PlayerMovement : MonoBehaviour
         if (invulnerable)
             return;
 
-        if(super)
+        if (super)
         {
+            audioSource.PlayOneShot(hitSound);
             super = false;
             transform.localScale = new Vector3(1, 1, 1);
             StartCoroutine(Invulnerability());
@@ -112,8 +119,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
-        transform.position = initialPosition;
-        transform.localScale = new Vector3(1, 1, 1);
+        audioSource.PlayOneShot(hitSound);
         super = false;
         OnDied?.Invoke();
     }
@@ -122,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.CompareTag("Mushroom"))
         {
+            audioSource.PlayOneShot(powerUpSound);
             super = true;
             transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
             OnPowerUpPickedUp?.Invoke();

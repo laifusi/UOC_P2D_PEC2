@@ -8,6 +8,7 @@ public class BreakableBox : HittableFromBelow
     public static Action OnBoxBroken;
 
     private Animator animator;
+    private AudioSource audioSource;
     private int amountOfCoins;
     private int coinsTaken;
 
@@ -17,6 +18,7 @@ public class BreakableBox : HittableFromBelow
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         amountOfCoins = UnityEngine.Random.Range(0, maxPossibleAmountOfCoins);
     }
 
@@ -42,6 +44,7 @@ public class BreakableBox : HittableFromBelow
     {
         particles.SetActive(true);
         GetComponentInChildren<SpriteRenderer>().enabled = false;
+        audioSource.Play();
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }

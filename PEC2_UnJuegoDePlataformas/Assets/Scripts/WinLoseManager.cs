@@ -14,7 +14,7 @@ public class WinLoseManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
-        PlayerMovement.OnDied += GameLost;
+        Player.OnDied += GameLost;
         PointsManager.OnGameWon += GameWon;
     }
 
@@ -53,7 +53,7 @@ public class WinLoseManager : MonoBehaviour
 
     private void OnDisable()
     {
-        PlayerMovement.OnDied -= GameLost;
+        Player.OnDied -= GameLost;
         PointsManager.OnGameWon -= GameWon;
     }
 }

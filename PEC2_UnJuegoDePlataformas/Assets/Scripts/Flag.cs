@@ -18,7 +18,7 @@ public class Flag : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = collision.collider.GetComponent<PlayerMovement>();
+        var player = collision.collider.GetComponent<Player>();
         if(player != null)
         {
             GetComponent<Collider2D>().enabled = false;
@@ -28,6 +28,7 @@ public class Flag : MonoBehaviour
                 if(contactPointY < heightPointsSectors[i].height || i + 1 == heightPointsSectors.Length)
                 {
                     OnFlagReached?.Invoke(heightPointsSectors[i].points);
+                    GetComponent<AudioSource>().Play();
                     GetComponent<Animator>().SetTrigger("FlagReached");
                     return;
                 }

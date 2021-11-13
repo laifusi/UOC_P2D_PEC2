@@ -7,9 +7,19 @@ public class Coin : MonoBehaviour
 {
     public static Action OnCoinPickedUp;
 
+    public bool pickedup;
+    
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void PickUpCoin()
     {
         OnCoinPickedUp?.Invoke();
+        audioSource.Play();
     }
 
     public void DestroyCoin()
@@ -19,12 +29,20 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var player = collision.GetComponent<PlayerMovement>();
+        var player = collision.GetComponent<Player>();
 
-        if(player != null)
+        if(player != null && !pickedup)
         {
-            PickUpCoin();
-            DestroyCoin();
+            pickedup = true;
+            StartCoroutine(PickUpAndDestroy());
         }
+    }
+
+    IEnumerator PickUpAndDestroy()
+    {
+        PickUpCoin();
+        GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        DestroyCoin();
     }
 }

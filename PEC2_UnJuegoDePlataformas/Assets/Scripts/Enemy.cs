@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private Collider2D collider2d;
     private RaycastHit2D sensorHit;
     private Transform currentSensor;
+    private AudioSource audioSource;
 
     [SerializeField] int velocity = 1;
     [Range(-1, 1)][SerializeField] int xDirection = -1;
@@ -19,6 +20,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] LayerMask wallLayerMask;
 
     public static Action OnEnemyKilled;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -59,7 +65,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = collision.collider.GetComponent<PlayerMovement>();
+        var player = collision.collider.GetComponent<Player>();
         if(player != null)
         {
             if(collision.contacts[0].normal.y <= -0.5)
@@ -83,6 +89,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        audioSource.Play();
         OnEnemyKilled?.Invoke();
         StartCoroutine(Fade());
         GetComponent<Collider2D>().enabled = false;
