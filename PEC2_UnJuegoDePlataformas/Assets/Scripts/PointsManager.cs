@@ -1,23 +1,24 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PointsManager : MonoBehaviour
 {
-    [SerializeField] int pointsPerCoin = 200;
-    [SerializeField] int pointsPerPowerUp = 1000;
-    [SerializeField] int pointsPerEnemyKilled = 100;
-    [SerializeField] int pointsPerBrokenBox = 50;
+    [SerializeField] int pointsPerCoin = 200; // amount of points per coin collected
+    [SerializeField] int pointsPerPowerUp = 1000; // amount of points per power up collected
+    [SerializeField] int pointsPerEnemyKilled = 100; // amount of points per enemy killed
+    [SerializeField] int pointsPerBrokenBox = 50; // amount of points per box broken
 
-    private int totalPoints;
+    private int totalPoints; // total amount of points
+    
+    public static Action<int> OnPointsChanged; // Action<int> for when the amount of total points changes (we pass the total points)
+    public static Action<int> OnPointsAdded; // Action<int> for when we add an amount of points (we pass the number of points added)
+    public static Action OnGameWon; // Action for when the game is won
 
-    public static Action<int> OnPointsChanged;
-    public static Action<int> OnPointsAdded;
-    public static Action OnGameWon;
+    public int TotalPoints => totalPoints; // public amount of total points
 
-    public int TotalPoints => totalPoints;
-
+    /// <summary>
+    /// Start method to reset the points and subscribe to the Actions that give points
+    /// </summary>
     private void Start()
     {
         ResetPoints();
@@ -29,11 +30,18 @@ public class PointsManager : MonoBehaviour
         Flag.OnFlagReached += FlagReached;
     }
 
+    /// <summary>
+    /// Method to set the points to 0
+    /// Public in case we need to call it from another class
+    /// </summary>
     public void ResetPoints()
     {
         totalPoints = 0;
     }
 
+    /// <summary>
+    /// Method to add the points for a coin collected
+    /// </summary>
     private void CoinPickedUp()
     {
         totalPoints += pointsPerCoin;
@@ -41,6 +49,9 @@ public class PointsManager : MonoBehaviour
         OnPointsAdded?.Invoke(pointsPerCoin);
     }
 
+    /// <summary>
+    /// Method to add the points for a power up collected
+    /// </summary>
     private void PowerUpPickedUp()
     {
         totalPoints += pointsPerPowerUp;
@@ -48,6 +59,9 @@ public class PointsManager : MonoBehaviour
         OnPointsAdded?.Invoke(pointsPerPowerUp);
     }
 
+    /// <summary>
+    /// Method to add the points for an enemy killed
+    /// </summary>
     private void EnemyKilled()
     {
         totalPoints += pointsPerEnemyKilled;
@@ -55,6 +69,9 @@ public class PointsManager : MonoBehaviour
         OnPointsAdded?.Invoke(pointsPerEnemyKilled);
     }
 
+    /// <summary>
+    /// Method to add the points for a box broken
+    /// </summary>
     private void BoxBroken()
     {
         totalPoints += pointsPerBrokenBox;
@@ -62,6 +79,10 @@ public class PointsManager : MonoBehaviour
         OnPointsAdded?.Invoke(pointsPerBrokenBox);
     }
 
+    /// <summary>
+    /// Method to add the points for the flag reached and invoke the OnGameWon Action
+    /// </summary>
+    /// <param name="flagPoints">amount of points to be added</param>
     private void FlagReached(int flagPoints)
     {
         totalPoints += flagPoints;
@@ -70,6 +91,9 @@ public class PointsManager : MonoBehaviour
         OnGameWon?.Invoke();
     }
 
+    /// <summary>
+    /// OnDisable method to unsubscribe to the Actions
+    /// </summary>
     private void OnDisable()
     {
         Coin.OnCoinPickedUp -= CoinPickedUp;
