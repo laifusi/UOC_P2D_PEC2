@@ -1,91 +1,52 @@
 # PEC 2 - Un juego de plataformas
 
+## Cómo jugar
+El objetivo del juego es llegar a la bandera al final del nivel, conseguir el mayor número de puntos y de monedas y hacerlo en el menor tiempo posible, evitando que los enemigos que toquen y evitando caer al vacío.
+
+En las versiones de Windows y Web, el jugador debe usar las teclas "A" y "D" para mover al personaje, y la tecla "espacio" para saltar. Mientras que en la version para Android, usará un joystick situado a la derecha de la pantalla, evitando así tapar al personaje con la mano.
+
+Si los enemigos te tocan, mueres o pierdes tu estado super, pero si, en cambio, saltas sobre ellos, son estos los que mueren.
+
+Las setas te proporcionan el estado super, con el que consigues una vida extra, además de una gran cantidad de puntos.
+
+Los bloques de exclamación contienen monedas o setas, mientras que los bloques normales pueden contener una cantidad aleatoria monedas, que puede ser 0. Estos, además, se pueden destruir si los golpeamos en modo super.
+
+Dependiendo de la altura a la que lleguemos a la bandera, se ganarán unos puntos o otros, siendo la punta superior de la bandera la que más puntos proporciona y la parte inferior, la que menos.
+
+Todos los puntos están basados en el sistema de puntuación del juego original.
+
+## Estructura e implementación
+En primer lugar, tenemos la clase Player, que se encarga de controlar todo el movimiento del personaje, además de su vida, su estado super y su colisión con setas o con una pared invisible que hemos añadido para evitar que el jugador se mueva demasiado hacia la izquierda. La cámara, por su parte, se moverá en relación a la posición del jugador, mediante la clase CameraMovement, únicamente en el eje x.
+
+Por otro lado, la clase Enemy se encarga del moviemiento de este y la detección de colisiones con el jugador, comprobando el punto de colisión para decidir cuál de los dos recibe daño. El enemigo, además, controla si va chocar con una pared, mediante Raycast, y gira si es así.
+
+En cuanto a los puntos, las monedas y el tiempo, los hemos estructurado en dos clases, un Manager, que se encarga de controlar la cantidad de puntos, monedas o tiempo, y un TextUpdater, que se encarga de actualizar el texto del HUD cada vez que se añade una moneda, puntos o un segundo. Para esto último, hemos implementado una clase abstracta TextUpdater que define el método que se encargará de cambiar el texto, pero que necesita estar suscrito a una Action<int> que defineremos en cada una de las clases que heredan de TextUpdater, es decir, PointsTextUpdater, CoinsTextUpdater y TimeTextUpdater. De este modo, cada una de ellas se suscribe a la Action del Manager que le corresponde, PointsManager, CoinsManager y TimeManager. Por otro lado, para actualizar el highscore, creamos una clase HighscoreText que tendrá definido el tipo de puntuación que debe mostrar y sacará dicha puntuación de PlayerPrefs. Hemos definido los tipos de puntuación mediante un enum.
+
+Los bloques, tanto de exclamación, como normales, se han definido mediante una clase abstracta que hemos llamado HittableFromBelow. En esta definimos las acciones comunes de ambas clases, es decir, la detección de la colisión desde abajo y la salida de prefabs de los bloques. Definimos, además, un método abstracto que cada clase deberá implementar y que determina qué hacer cuando tocamos el bloque desde abajo. En el caso de la clase BreakableBox, dependiendo de si el jugador está en modo super se romperá el bloque o se sacará una moneda de él. En el caso de la clase ExclamationBox, se sacará el prefab y se marcará el bloque como usado.
+
+La clase Flag se encarga de controlar la altura a la que el jugador alcanza la bandera y de enviar los puntos correspondientes a la clase PointsManager.
+
+La clase WinLoseManager, por su parte, se encarga de detectar cuando ha acabado el juego y actuar en consecuencia, mostrando la pantalla de pérdida cuando el jugador muere, y la pantalla de ganado cuando gana. En esta, además, se encarga de actualizar las máximas puntuaciones, controlando si los puntos y las monedas son mayores a la puntuación guardada en PlayerPrefs, y si el tiempo es menor al guardado, pero teniendo en cuenta que no puede ser 0.
+
+Finalmente, hemos añadido algunas clases para controlar la música, haciendo uso del patrón singleton para mantener siempre el mismo objeto; los elementos que solo deberían mostrarse en android o en ordenador, como el joystick o las intrucciones; la muerte al caer al vacío, los cambios de escenas o la salida de la aplicación y la desaparición de las instrucciones después de unos segundos.
+
+## Sprites y sonidos
+Para esta PAC hemos utilizado el [Platformer Art: Pixel Redux](https://www.kenney.nl/assets/platformer-art-pixel-redux) de [Kenney](https://www.kenney.nl/).
+
+Los efectos de sonido se han hecho mediante el programa Bfxr.
+
+La música de fondo es el [Red Heels (piano version)](https://opengameart.org/content/red-heels-piano-ver) de [TAD](https://opengameart.org/users/tad).
+
+## Builds
+Se han hecho builds tanto para Windows, como para WebGL y Android. Para este último, además, se ha usado el [Joystick Pack](https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631) de [Fenerax Studios](https://assetstore.unity.com/publishers/32730).
+
+Los tres builds se pueden encontrar [aquí](https://fuscor.itch.io/p2d-pec-2-un-juego-de-plataformas).
+
+## Dificultades
 
 
-## Getting started
+## Vídeo
+![](PEC2_video.mp4)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/lfusterco/pec-2-un-juego-de-plataformas.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/integrations/)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://docs.gitlab.com/ee/user/clusters/agent/)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:a546e64770ddf0699f6e3e19bd9983ea?https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
 
