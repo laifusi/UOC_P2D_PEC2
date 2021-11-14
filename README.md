@@ -31,7 +31,7 @@ La clase WinLoseManager, por su parte, se encarga de detectar cuando ha acabado 
 Finalmente, hemos añadido algunas clases para controlar la música, haciendo uso del patrón singleton para mantener siempre el mismo objeto; los elementos que solo deberían mostrarse en android o en ordenador, como el joystick o las intrucciones; la muerte al caer al vacío, los cambios de escenas o la salida de la aplicación y la desaparición de las instrucciones después de unos segundos.
 
 ## Sprites y sonidos
-Para esta PAC hemos utilizado el [Platformer Art: Pixel Redux](https://www.kenney.nl/assets/platformer-art-pixel-redux) de [Kenney](https://www.kenney.nl/).
+Para esta PAC hemos utilizado el [Platformer Art: Pixel Redux](https://www.kenney.nl/assets/platformer-art-pixel-redux) de [Kenney](https://www.kenney.nl/). Además, hemos utilizado los Tilemaps para la creación del nivel, con Tilemaps distintos para los elementos del fondo, los elementos de juego y los elementos en primer plano. Se ha usado, también los Prefab Brush para añadir desde el Tile Palette a los enemigos, los bloques, las monedas e incluso la bandera.
 
 Los efectos de sonido se han hecho mediante el programa Bfxr.
 
@@ -42,8 +42,12 @@ Se han hecho builds tanto para Windows, como para WebGL y Android. Para este úl
 
 Los tres builds se pueden encontrar [aquí](https://fuscor.itch.io/p2d-pec-2-un-juego-de-plataformas).
 
-## Dificultades
+## Dificultades y problemas
+La mayor dificultad encontrada ha sido el control del salto del personaje al intentar añadir la opción de saltos más largos o más cortos.
 
+Se han encontrado otros pequeños problemas por el camino, pero se han encontrado soluciones fácilmente. Un ejemplo de ello, es la imposibilidad de desactivar el collider de las monedas recogidas desde el código en la corrutina. Para solucionarlo, se ha añadido un bool que define si la moneda se ha cogido o no, evitando que el personaje coja una misma moneda más de una vez.
+
+Por otro lado, el movimiento en la versión Android se ha hecho con poco tiempo y resulta bastante complicado de controlar a la hora de jugar. Esto puede deberse a la posición del joystick o a la implementación utilizada.
 
 ## Vídeo
 ![](PEC2_video.mp4)
