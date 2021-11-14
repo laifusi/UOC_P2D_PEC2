@@ -37,7 +37,7 @@ public class WinLoseManager : MonoBehaviour
             PlayerPrefs.SetInt("Coins", coinsCollected);
         }
 
-        if(timePassed < timeHighscore)
+        if(timePassed < timeHighscore || timeHighscore == 0)
         {
             PlayerPrefs.SetInt("Time", timePassed);
         }

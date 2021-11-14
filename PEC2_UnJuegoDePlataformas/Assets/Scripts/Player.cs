@@ -13,9 +13,12 @@ public class Player : MonoBehaviour
     private float timePassed; // timePassed to control longer jumps
     private bool onLeftInvisibleWall; // bool that indicates if we are touching an invisible wall on the left
     private AudioSource audioSource; // AudioSource component
+    private bool jumpInput; // bool that indicates if the input to jump was activated
+    private bool keepJumpingInput; // bool that indicates if the input to keep jumping was activated
 
     [Header("Movement")]
     [SerializeField] float velocity = 5; // movement velocity
+    [SerializeField] Joystick joystick;
     [Header("Jumping")]
     [SerializeField] float minJumpForce = 2; // minimum jump force
     [SerializeField] float jumpForceMultiplier = 2; // jump force multiplier
@@ -65,7 +68,12 @@ public class Player : MonoBehaviour
     /// </summary>
     private void MovementControl()
     {
-        horizontal = Input.GetAxis("Horizontal");
+        #if UNITY_ANDROID
+                horizontal = joystick.Horizontal;
+        #else
+                horizontal = Input.GetAxis("Horizontal");
+        #endif
+
         if (horizontal < 0 && onLeftInvisibleWall)
         {
             rigidbody2d.velocity = new Vector2(0, rigidbody2d.velocity.y);
@@ -96,7 +104,14 @@ public class Player : MonoBehaviour
     {
         timePassed += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        #if UNITY_ANDROID
+                jumpInput = keepJumpingInput = joystick.Vertical >= 0.5f;
+        #else
+            jumpInput = Input.GetKeyDown(KeyCode.Space);
+            keepJumpingInput = Input.GetKey(KeyCode.Space);
+        #endif
+
+        if (jumpInput && IsGrounded())
         {
             Jump();
             timePassed = 0;
@@ -106,7 +121,7 @@ public class Player : MonoBehaviour
             animator.SetBool("jumping", !IsGrounded());
         }
 
-        if (Input.GetKey(KeyCode.Space) && timePassed <= maxJumpTime && rigidbody2d.velocity.y + jumpForceMultiplier <= maxJumpForce)
+        if (keepJumpingInput && timePassed <= maxJumpTime && rigidbody2d.velocity.y + jumpForceMultiplier <= maxJumpForce)
         {
             JumpLonger();
         }
@@ -119,7 +134,8 @@ public class Player : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, minJumpForce);
         animator.SetBool("jumping", true);
-        audioSource.PlayOneShot(jumpSound);
+        if(!audioSource.isPlaying)
+            audioSource.PlayOneShot(jumpSound);
     }
 
     /// <summary>
